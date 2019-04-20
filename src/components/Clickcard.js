@@ -2,13 +2,14 @@ import React from "react"
 
 function Clickcard(props) {
     return(
-        <div className="card">
-        <div className="img-container">
-          <img alt="test" src={props.image} />
+          props.shuffle(props.cards).map(characters =>(
+          <div key = {characters.id} className="card">
+        <div  className="img-container"> 
+          <img onClick= {props.handleClick} className= "cardImage" alt={characters.name} src={characters.image} />
         </div>
-        <div className="content">
         </div>
-        </div>
+        ))
+  
 
     )
 }
