@@ -5,7 +5,7 @@ function JumbotronComponent() {
     return(
         <Jumbotron fluid>
         <h1>Clicky Game!</h1>
-        <p>Click an image to earn points. Don't click duplicates! </p>
+        <p>Click an image below to earn points. Don't click duplicates! </p>
 </Jumbotron>
     )
 }

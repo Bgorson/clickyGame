@@ -5,7 +5,7 @@ function Clickcard(props) {
           props.shuffle(props.cards).map(characters =>(
           <div key = {characters.id} className="card">
         <div  className="img-container"> 
-          <img onClick= {props.handleClick} className= "cardImage" alt={characters.name} src={characters.image} />
+          <img onClick= {props.handleClick} className= "cardImage" alt={characters.name} src={characters.image} fluid="true" />
         </div>
         </div>
         ))

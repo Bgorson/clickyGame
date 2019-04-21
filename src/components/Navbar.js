@@ -12,7 +12,7 @@ class NavbarInfo extends React.Component {
             Clicky Game
             </Col>
 
-            <Col>
+            <Col className="heading">
             Click and Image to Begin
             </Col>
         
