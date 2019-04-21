@@ -8,13 +8,13 @@ import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import "./style.css"
 
-
 class Clickygame extends Component {
     state= {
         score: 0,
         topScore: 0,
         clicked: []
     }
+
 
 handleClick = event =>{
     console.log("clicked")
@@ -58,14 +58,14 @@ render(){
             topScore= {this.state.topScore}/>
             <Jumbotron/>
         <Container className= "collection">
-            <Row>
+           <Row>
         <Clickcard 
             shuffle = {this.shuffleCards}
             cards = {cards}
             handleClick= {this.handleClick}
             />
-            
             </Row>
+
 
         </Container>
             <Footer/>

@@ -3,15 +3,8 @@ import Navbar from 'react-bootstrap/Navbar'
 function Footer() {
     return(
         <Navbar sticky="bottom" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
-          <img
-            alt=""
-            src="/logo.svg"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />
-          {' Clicky Game'}
+        <Navbar.Brand href="https://bgorson.github.io"target="_blank">
+          {' Clicky Game Built by Brandon Gorson'}
         </Navbar.Brand>
       </Navbar>
     )
