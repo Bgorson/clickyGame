@@ -15,7 +15,6 @@ class Clickygame extends Component {
         clicked: []
     }
 
-
 handleClick = event =>{
     console.log("clicked")
     let localScore = this.state.score
