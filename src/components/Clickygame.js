@@ -12,8 +12,11 @@ class Clickygame extends Component {
     state= {
         score: 0,
         topScore: 0,
-        clicked: []
+        clicked: [],
+        headerText: "Click an Image to Begin"
     }
+
+
 
 handleClick = event =>{
     console.log("clicked")
@@ -26,6 +29,7 @@ handleClick = event =>{
         this.state.clicked.push(event.target.alt)
         this.setState({
             score: localScore,
+            headerText:"That is correct!",
             topScore: Math.max(this.state.topScore, localScore)
         })
 
@@ -33,7 +37,11 @@ handleClick = event =>{
     } 
 
     else {
-        this.setState({score:0, clicked:[]})
+        this.setState({
+            score:0,
+            clicked:[],
+            headerText:"That is incorrect"
+            })
     }
     console.log(event.target.alt)
 }
@@ -54,7 +62,10 @@ render(){
         <div>
             <Navbar
             score = {this.state.score}
-            topScore= {this.state.topScore}/>
+            topScore= {this.state.topScore}
+            text= {this.state.headerText}
+            />
+        
             <Jumbotron/>
         <Container className= "collection">
            <Row>

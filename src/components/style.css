@@ -25,7 +25,11 @@
 nav {
     background:blue;
     color:white;
-    font-size: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.navbar {
+    padding:1.5em;
 }
 .heading {
     font-weight:bolder;

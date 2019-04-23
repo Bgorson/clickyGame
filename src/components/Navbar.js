@@ -13,7 +13,7 @@ class NavbarInfo extends React.Component {
             </Col>
 
             <Col className="heading">
-            Click and Image to Begin
+            {this.props.text}
             </Col>
         
             <Col>
